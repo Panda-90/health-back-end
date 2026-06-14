@@ -21,7 +21,6 @@ jobs:
 deploy:
 runs-on: ubuntu-latest
 
-```
 steps:
   - name: Checkout
     uses: actions/checkout@v4
@@ -63,5 +62,4 @@ steps:
       gcloud run services describe $SERVICE \
         --region $REGION \
         --format="value(status.url)"
-```
 
